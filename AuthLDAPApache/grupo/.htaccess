@@ -1,0 +1,7 @@
+AuthType Basic
+AuthBasicProvider ldap
+AuthName "login...."
+AuthLDAPURL "ldap://192.168.3.115/dc=cristina,dc=local?uid?sub?(objectClass=*)"
+AuthLDAPBindDN "cn=admin,dc=cristina,dc=local"
+AuthLDAPBindPassword paso
+Require ldap-group cn=jefes,ou=groups,dc=cristina,dc=local
